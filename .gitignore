@@ -2,4 +2,4 @@
 
 // don't track .files & only track .c fiels 
 *.* 
-!*.c  
+!*.c
