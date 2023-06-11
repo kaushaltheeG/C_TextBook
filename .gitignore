@@ -1,4 +1,5 @@
 .DS_Store
 
-// ignore all files without an extention
-*
+// don't track .files & only track .c fiels 
+*.* 
+!*.c  
