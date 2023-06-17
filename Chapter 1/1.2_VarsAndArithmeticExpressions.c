@@ -18,6 +18,8 @@
     %6.2f print as floating point, at least 6 wide and 2 decimal points
 */
 
+int ftoc(int fahr);
+
 main() 
 {
     int lower = 0, upper = 300, increment = 20;
@@ -25,9 +27,15 @@ main()
 
     while (fahr <= upper)
     {
-        celsius = (5 * (fahr -32)) / 9;
+        celsius = ftoc(fahr);
         printf("%d\t%d\n", fahr, celsius); // %d is placeholder for second and third arg; \t = tab
         fahr += increment;
     }
     
+}
+
+/* converts Fahrenhiet to Celsius */
+int ftoc(int fahr)
+{
+    return (5 * (fahr - 32)) / 9;
 }

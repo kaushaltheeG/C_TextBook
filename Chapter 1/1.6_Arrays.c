@@ -16,7 +16,7 @@ main()
     while ((c = getchar()) != 'e') // was EOF 
     {
         if (c >= '0' && c <= '9')
-            ++ndigit[c-'0'];
+            ++ndigit[c-'0']; // this is subtracting/converting char num to int num
         else if (c == ' ' || c == '\n' || c == '\t') // \t means something else
             ++nwhite;
         else 
